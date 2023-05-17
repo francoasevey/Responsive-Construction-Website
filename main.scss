@@ -240,6 +240,20 @@ html{
     z-index: 1100;
     padding: 0 2rem;
     padding-top: 5rem;
+
+    .info{
+        i{
+            @include iconsBox();
+            margin-bottom: .5rem;
+        }
+        h3{
+            @include titleText(2rem);
+            padding: 1rem 0;
+        }
+        p{
+            @include graphText(1.5rem);
+        }
+    }
 }
 @media (max-width: 1200px){
 
