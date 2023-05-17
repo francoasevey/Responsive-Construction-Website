@@ -242,6 +242,7 @@ html{
     padding-top: 5rem;
 
     .info{
+        padding: 2rem 0;
         i{
             @include iconsBox();
             margin-bottom: .5rem;
@@ -252,6 +253,15 @@ html{
         }
         p{
             @include graphText(1.5rem);
+        }
+    }
+
+    .share{
+        padding-top: 1rem;
+
+        a{
+            @include iconsBox();
+            margin: 0 .3rem;
         }
     }
 }
