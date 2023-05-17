@@ -257,7 +257,9 @@ html{
     }
 
     .share{
-        padding-top: 1rem;
+        padding-top: 2rem;
+        border-top: var(--border);
+        margin-top: 1rem;
 
         a{
             @include iconsBox();
