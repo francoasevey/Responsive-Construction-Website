@@ -287,7 +287,32 @@ section{
         }
     }
 }
+.home{
+    padding: 0;
 
+    .slide{
+        min-height: 60rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-size: cover !important;
+        background-position: center !important;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--white), transparent);
+        }
+
+        .content{
+            width: 50rem;
+            position: relative;
+        }
+    }
+}
 
 @media (max-width: 1200px){
 
