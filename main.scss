@@ -29,7 +29,7 @@
 @mixin graphText($graphSize){
     font-size: $graphSize;
     color: var(--light-color);
-    line-height: 1.5;
+    line-height: 2;
 }
 @mixin iconsBox(){
     height: 5rem;
@@ -97,6 +97,7 @@ section{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background: var(--white);
 
     .logo{
         @include titleText(2.5rem);
@@ -310,7 +311,42 @@ section{
         .content{
             width: 50rem;
             position: relative;
+
+            h3{
+                @include titleText(6rem);
+                text-transform: uppercase;
+            }
+
+            p{
+                @include graphText(1.4rem);
+                padding: 1rem 0;
+            }
         }
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        top: initial;
+        bottom: 0;
+        left: initial;
+        right: 0;
+        height: 7rem;
+        width: 7rem;
+        line-height: 7rem;
+        background: var(--white);
+
+        &:hover{
+            background: var(--yellow);
+        }
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .swiper-button-prev{
+        right: 7rem;
     }
 }
 
@@ -368,6 +404,18 @@ section{
         }
         .login-form{
             width: 90%;
+        }
+    }
+
+    .home .slide{
+        justify-content: center;
+
+        .content{
+            text-align: center;
+
+            h3{
+                font-size: 3rem;
+            }
         }
     }
 }

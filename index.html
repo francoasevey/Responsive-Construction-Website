@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Construction Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -80,9 +81,9 @@
     </div>
 
     <section class="home" id="home">
-        <div class="home-slider">
-            <div class="w">
-                <section class="slide" style="background: url(/images/home-slide-1.jpg) no-repeat;">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(/images/home-slide-1.jpg) no-repeat;">
                 <div class="content">
                     <h3>we provide best service</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam blanditiis non consequuntur nam repellendus dolore.</p>
@@ -90,7 +91,7 @@
                 </div>
                 </section>
 
-                <section class="slide" style="background: url(/images/home-slide-2.jpg) no-repeat;">
+                <section class="swiper-slide slide" style="background: url(/images/home-slide-2.jpg) no-repeat;">
                 <div class="content">
                     <h3>making dream come to life</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam blanditiis non consequuntur nam repellendus dolore.</p>
@@ -98,7 +99,7 @@
                 </div>
                 </section>
 
-                <section class="slide" style="background: url(/images/home-slide-3.jpg) no-repeat;">
+                <section class="swiper-slide slide" style="background: url(/images/home-slide-3.jpg) no-repeat;">
                 <div class="content">
                     <h3>from concept to creation</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam blanditiis non consequuntur nam repellendus dolore.</p>
@@ -106,9 +107,12 @@
                 </div>
                 </section>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
 </body>
 </html>
