@@ -315,6 +315,14 @@ html::-webkit-scrollbar-thumb {
     margin: 2rem;
   }
 }
+@media (max-width: 768px) {
+  .header .search-form {
+    width: 90%;
+  }
+  .header .login-form {
+    width: 90%;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
