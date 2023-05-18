@@ -36,6 +36,10 @@ html::-webkit-scrollbar-thumb {
   background: var(--yellow);
 }
 
+section {
+  padding: 5rem 10%;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -287,10 +291,16 @@ html::-webkit-scrollbar-thumb {
   .header {
     padding: 1.5rem 2rem;
   }
+  section {
+    padding: 3rem 5%;
+  }
 }
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
   }
   .header #menu-btn {
     display: inline-block;

@@ -64,6 +64,9 @@ html{
         background: var(--yellow);
     }
 }
+section{
+    padding: 5rem 10%;
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -284,10 +287,15 @@ html{
         }
     }
 }
+
+
 @media (max-width: 1200px){
 
     .header{
         padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 3rem 5%;
     }
 }
 
@@ -295,6 +303,10 @@ html{
 
     html{
         font-size: 55%;
+    }
+
+    section{
+        padding: 3rem 2rem;
     }
 
     .header{
