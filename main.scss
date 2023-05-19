@@ -372,6 +372,14 @@ section{
                 width: 100%;
             }
         }
+
+        .content{
+            flex: 1 1 41rem;
+
+            h3{
+                @include titleText(3rem);
+            }
+        }
     }
 }
 
