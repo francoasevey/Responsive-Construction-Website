@@ -364,6 +364,14 @@ section{
         align-items: center;
         flex-wrap: wrap;
         gap: 3rem;
+
+        .video{
+            flex: 1 1 41rem;
+
+            video{
+                width: 100%;
+            }
+        }
     }
 }
 
