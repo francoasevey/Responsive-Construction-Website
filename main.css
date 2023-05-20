@@ -675,6 +675,17 @@ section {
   line-height: 2;
 }
 
+.logo-container {
+  text-align: center;
+}
+.logo-container img {
+  height: 10rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
