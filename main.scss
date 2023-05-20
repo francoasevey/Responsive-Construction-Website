@@ -14,7 +14,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    transition: all .2s linear;
 }
 @mixin grid($val){
     display: grid;
@@ -85,6 +84,7 @@ section{
     cursor: pointer;
     font-size: 1.7rem;
     text-transform: capitalize;
+    transition: .2s linear;
 
     &:hover{
         background: var(--yellow);
@@ -427,6 +427,8 @@ section{
             img{
                 height: 7rem;
                 margin-bottom: .5rem;
+                transition: .2s linear;
+
             }
 
             h3{
@@ -454,6 +456,7 @@ section{
 
             &:hover .image img{
                 transform: scale(1.1);
+
             }
 
             .image{
@@ -464,6 +467,8 @@ section{
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                    transition: .2s linear;
+
                 }
             }
             .content{
@@ -589,6 +594,51 @@ section{
         }
     }
 }
+.contact{
+    background: var(--black);
+
+    .heading{
+        color: var(--white);
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .map{
+            flex: 1 1 41rem;
+            width: 100%;
+        }
+
+        form{
+            flex: 1 1 41rem;
+            background: var(--white);
+            padding: 2rem;
+
+            h3{
+                @include titleText(2.5rem);
+            }
+
+            .box{
+                margin: .7rem 0;
+                width: 100%;
+                padding: 1.5rem 0;
+                border-bottom: var(--border);
+                font-size: 1.6rem;
+                color: var(--light-color);
+
+                &:focus{
+                    border-color: var(--yellow);
+                }
+            }
+            textarea{
+                height: 15rem;
+                resize: none;
+            }
+        }
+    }
+}
 
 @media (max-width: 1200px){
 
@@ -623,6 +673,8 @@ section{
             border-top: var(--border);
             border-bottom: var(--border);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: .2s linear;
+
 
             &.active{
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
